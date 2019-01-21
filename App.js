@@ -37,6 +37,8 @@ export default class App extends React.Component<Props> {
       s.resultadoText = "Obesidade grau I"
     } else if(s.resultado<40){
       s.resultadoText = "Obesidade grau II"
+    } else if(s.resultado==""){
+      s.resultadoText = "Digite os valores"
     } else {
       s.resultadoText = "Obesidade grau III"
     }
